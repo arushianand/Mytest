@@ -1,6 +1,4 @@
 
-#include<stdio.h>
-int main(void)
 {
 int angle;
  printf("enter an angle in degrees:");
