@@ -1,0 +1,46 @@
+
+#include<stdio.h>
+int main(void)
+{
+int angle;
+ printf("enter an angle in degrees:");
+scanf("%d",&angle);
+angle=angle%360;
+if(angle%90==0) printf("angle %d lies on an axis\n",angle);
+else
+if( angle >0 && angle <90)
+{
+printf("\nThe angle is in quadrant I");
+}
+else if( angle >90 && angle <180)
+{
+printf("\nThe angle is in quadrant II");
+}
+else if(angle >180 && angle <270)
+{
+printf("\nThe angle is in quadrant III");
+}
+else if (angle >270 && angle <360 )
+{
+printf("\nThe angle is in quadrant IV");
+}
+
+if(angle%90==0)
+switch(angle/90){
+
+case 0: printf("\nThe angle is on the positive X axis");
+break;
+case 1:
+printf("\nThe angle is on the positive Y axis");
+break;
+case 2:
+printf("\nThe angle is on the negative X axis");
+break;
+case 3:
+printf("\nThe angle is on the negative Y axis");
+break;
+default:
+printf("error");
+}
+return 0;
+
